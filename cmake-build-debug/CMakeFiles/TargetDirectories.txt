@@ -1,0 +1,3 @@
+/media/tsar_nosferatu/Development/C++/tim_buchalka/_lessons/_section10_challenge/cmake-build-debug/CMakeFiles/_section10_challenge.dir
+/media/tsar_nosferatu/Development/C++/tim_buchalka/_lessons/_section10_challenge/cmake-build-debug/CMakeFiles/edit_cache.dir
+/media/tsar_nosferatu/Development/C++/tim_buchalka/_lessons/_section10_challenge/cmake-build-debug/CMakeFiles/rebuild_cache.dir
