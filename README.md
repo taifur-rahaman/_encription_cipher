@@ -2,7 +2,7 @@
 
 A simple method of sending a secret message with an encryption code.
 
-Encrypting Key
+### Encrypting Key
     
     > Alphabet {"abcdefhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"}
     > Key {"XZNLWEBGJHQDYVTKFUOMPCIASRxznlwebgjhqdyvtkfuompciasr"}
