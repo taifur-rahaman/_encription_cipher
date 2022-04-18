@@ -1,9 +1,11 @@
 #include <iostream>
-#include <string>
+#include <string.h>
+#include <cstring>
+
 
 using namespace std;
 
-int main(){
+int main() {
     string alphabet = {"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "};
     string key = {"XZNLWEBGJHQDYVTKFUOMPCIASRxznlwebgjhqdyvtkfuompciasr1"};
 
@@ -16,10 +18,8 @@ int main(){
     // Encryption
     for(size_t i{0}; i < alphabet.length(); i++)
     {
-        for(char c: user_text)
-        {
-            if (alphabet[i] == c)
-            {
+        for (char c: user_text) {
+            if (alphabet[i] == c) {
                 encrypt_text.push_back(key[i]);
             }
         }
@@ -35,13 +35,14 @@ int main(){
 
     if (choice == 1) {
         // Decryption
-        cout << "\n\nDecrypted Text" << endl;
+        cout << "\nDecrypted Text" << endl;
 
         string decrypted_text;
         for (size_t i{0}; i < key.length(); i++) {
             for (char c: encrypt_text) {
                 if (key[i] == c) {
-                    decrypted_text.push_back(alphabet[i]);
+                    char temp = (alphabet[i]);
+                    decrypted_text += temp;
                 }
             }
         }
@@ -62,11 +63,7 @@ int main(){
             }
         }
 
-        cout << "\n\nThe encrypted text: " << encrypt_text << endl;
-        cout << "\n\nThe decrypted text: " << decrypted_text << endl;
+        cout << "\nThe encrypted text: " << encrypt_text << endl;
+        cout << "The decrypted text: " << main_text << endl;
     }
-
-
-
-
 }
